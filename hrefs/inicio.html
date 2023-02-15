@@ -8,8 +8,13 @@
     <title>Meu primeiro HTML</title>
     <style>
         #cabecalho {
+            /* container pai */
+
+            display: flex;
+            justify-content: space-between;
             background-color: black;
         }
+
         #cabecalho a {
             color: #ffff;
             text-decoration: none;
@@ -21,13 +26,17 @@
 <body>
     <div id="cabecalho">
         <img src="C:\Users\tec\Downloads\logotipo-gamer (3).png" alt="Logotipo aqui">
+        <!-- container filho -->
 
-        <a href="inicio.html">Início</a>
-        <a href="jogadores.html">Jogadores</a>
-        <a href="equipes.html">Equipes</a>
-        <a href="login.html">Login</a>
+        <div id="menu">
+            <a href="inicio.html">Início</a>
+            <a href="jogadores.html">Jogadores</a>
+            <a href="equipes.html">Equipes</a>
+            <a href="login.html">Login</a>
+        </div>
 
     </div>
+
     <h1>Hello, World!</h1>
     <h2>Como não cair na maldição do Hello World</h2>
     <p>Minha primeira página web. Meu querido Hello World</p>
